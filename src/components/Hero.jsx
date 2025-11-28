@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { hero as heroData } from '../data/resume.js';
 import { useNanoBananaAvatar } from '../hooks/useNanoBananaAvatar.js';
 
-const realPhoto = '/public/IMG_20230508_163721.jpg';
+const realPhoto = `${import.meta.env.BASE_URL || '/'}IMG_20230508_163721.jpg`;
 const relativityTags = ['Gravity hacker', 'Relativity daydreams', 'Time dilation fan', 'Black-hole debugger'];
 
 const Hero = () => {
