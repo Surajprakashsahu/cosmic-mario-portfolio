@@ -1,0 +1,87 @@
+﻿SURAJ PRAKASH SAHU
+I am a backend-focused software engineer with 8 years of experience in designing and implementing scalable, robust systems. Skilled in various backend technologies and architectures, I specialize in building efficient, high-performance solutions for modern businesses. Passionate about continuous learning and collaboration, I’m dedicated to delivering high-quality solutions that drive business growth and innovation.
+
+
+EXPERIENCE
+Tata Consultancy Services, Bhubaneswar— Sr. Software Engineer
+Client: American Express
+SEPTEMBER 2022 - PRESENT
+* Spearheaded backend development for the Global Merchant Pricing System (GMPS), a critical platform within American Express's merchant ecosystem, focusing on the Annual Pricing Review (APR) and Merchant Onboarding & Pricing (MP3) processes.
+* Designed and implemented scalable features for pricing plans and financial configurations, directly supporting global merchant onboarding and lifecycle management.
+* Developed and optimized Java/Spring Boot-based RESTful APIs to facilitate seamless integration with the UI and APR DB, ensuring efficient data flow and a smooth user experience.
+* Automated the software delivery lifecycle by setting up Continuous Integration/Continuous Deployment (CI/CD) pipelines using Jenkins.
+* Containerized microservices using Docker and orchestrated deployments with Kubernetes to improve scalability, environment consistency, and deployment efficiency.
+* Significantly improved testing efficiency by spearheading the implementation of a comprehensive regression testing framework.
+* Provided infrastructure support to ensure high application stability, performance, and availability across key systems.
+* Mentored junior developers, providing technical guidance, conducting detailed code reviews, and fostering a collaborative, high-standards team environment.
+* Leveraged Technologies: Spring Boot, Java, Jenkins, Docker, Kubernetes, PostgreSQL, SonarQube, Docker, Junit, Shell Scripting, Jmeter.
+Tonetag, Naffa Innovation/ Amazon IN, Bengaluru— Sr. Software Engineer
+Client: Amazon IN
+DECEMBER 2020 - August 2022
+* Voice assistance development in Alexa Skills, Google Actions,  Google Dialog Flow ES and Siri Shortcuts.
+* Part of identifying and analyzing the user requirements team.
+* Developed bidirectional voice to speech socket application for IVR payment calls which  improved speed and accuracy by 150%.
+* Designed and built a chatbot application for  IVR based payment using Rasa.
+* Designed APIs for dashboard which helped support team to fetch meaningful payment details 200% faster.
+* Support the AMAZON IN team to resolve security issues and load testing.
+* Mentor junior developers.
+* Leveraged Knowledge JAVA, Spring Boot, Alexa Skills, Google Actions, Google Dialog Flow ES, Siri Shortcuts, Pipelines, Lambda, Rasa,Nodejs.
+Mindfire Solutions, Bhubaneswar— Sr. Software Engineer
+AUGUST 2017 - DECEMBER 2020
+* Full stack web development in Java Spring Boot 2, Angular, and AWS.
+* Created Jasper Reports for projects and tasks, facilitating efficient project management for managers and designers at Fox News. These reports provided crucial insights into project progress, resource allocation, and task completion, leading to informed decision-making and streamlined workflows.
+* Increased search speed by 80% by integrating elasticsearch and designing an easy to use  global search bar.
+* Increased upload speed by 40% by integrating multithreading and AWS presigned URL methods.
+* Utilized AWS lambda for content provider for Alexa Skills and used it to manage business logic and database for Alexa Skills. Worked on features like Audio, Videos, Alexa Presentation language, In-Skill Purchase, Session Management, Intent Chaining etc. 
+* Developed Multi-Tenancy feature for application to allow scaling application for new Clients without terminating. 
+* Leveraged Knowledge in Java spring boot, Websockets, Multithreading , Angular, AWS, Git, Elastic search, Alexa Skill development, JavaFX.
+ShieldWatch Infotech, Kolkata — Trainee Programmer
+JUNE 2016 - JULY 2017
+* Developed museum application, integrated Beacon device for indoor navigation and detailed station information.
+* Developed HR application to leverage the company resources by including functionalities like employee availability and Leave management. 
+* Leveraged Knowledge in Native Android app development, Hybrid app development using Cordova, Google cloud messaging, Firebase.
+EDUCATION
+National Institute of Science and Technology, Berhampur — Bachelors in Technology (Information Technology)
+JULY 2012 - MAY 2016
+GPA: 7.6
+PROJECTS
+
+
+Global Merchant Pricing System (GMPS) @ American Express
+Contributed to the development of the Global Merchant Pricing System, a critical platform within American Express's merchant ecosystem. Designed and implemented features that process pricing plans and related financial configurations, directly supporting global merchant onboarding and lifecycle management. My work focused on optimizing data processing flows to ensure a scalable and reliable system.
+VoiceSe
+Developed a robust application to facilitate cashless transactions on feature phones. By utilizing advanced voice recognition and text-to-speech technologies, VoiceSe enables secure and efficient payments in areas with limited internet access. The solution is built on a robust tech stack including Java 8, Python, Angular, PostgreSQL, AWS, and Google Speech.
+https://www.tonetag.com/discovers/feature-phone-payments-at-pos-terminals/
+Resource Fulfillment System
+Designed and implemented a comprehensive workflow management solution tailored to the needs of television network hubs. Key features include project tracking, task assignment, deadline management, and user role-based access control. Built on a robust technology stack including Java 8, Angular, PostgreSQL, AWS, and ElasticSearch.
+https://fts.graphics
+Alexa: IKIGAI Journey
+This Alexa Skill acts as a tool to  identify users  interests through conversations and help them achieve their goals. It uses blogs, videos, podcasts and also sells some physical products to achieve personal goals.  This application was built on AWS lambda, Nodejs, Postgresql, SpringBoot.
+Oyeti: Food Delivery
+A food ordering application which works on Voice Assistants. This application was built on AWS lambda, Nodejs, Alexa Skills, Google Actions, Siri Shortcut.
+https://play.google.com/store/apps/details?id=com.tonetag.mywallet&hl=en_IN
+Leave Watch App
+Managing Leaves with the LeaveWatch App for all employees. Managers can confirm or deny applications quickly, and approve the same while planning for the future course of action in alignment with the leaves. Employees can apply, manage and plan their leaves through the app. It makes keeping a tab on the approved, upcoming, and remaining leaves easy.
+https://play.google.com/store/apps/details?id=com.shieldwatch.leavewatch&hl=en_IN
+	
+
+
+
+Bhubaneswar
+(+91) 8335910278 
+surajprakashsahu1@gmail.com
+www.linkedin.com/in/suraj-prakash-sahu/
+
+
+SKILLS
+Back-end: Java, Spring Boot, Liquibase, JPA, Hibernate , Logback, slf4j.
+* Cloud: AWS EC2, RDS, Lambda, S3, SQS, CloudWatch, SNS, SES, Elasticsearch, API Gateway, Route53.
+* * DB: PostgreSQL, Mysql.
+* CICD: Git, BitBucket, Maven, Gradel, Docker, Jenkins.
+* Secondary Skill: Angular, Typescript, JavaScript, Python, GenAI, Olama, Gemma3, Alexa Skills, Google Actions, Google Dialog Flow ES, Siri Shortcuts.
+LANGUAGES
+
+
+* English
+* Hindi
+* Odia
