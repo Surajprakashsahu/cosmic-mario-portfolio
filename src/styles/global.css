@@ -278,20 +278,169 @@ main {
   pointer-events: none;
   border-radius: 50%;
   border: 1px dashed rgba(255, 255, 255, 0.4);
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.5rem;
   color: var(--star);
   background: rgba(4, 3, 15, 0.6);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   mix-blend-mode: screen;
-  transition: transform 0.15s ease-out;
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, border 0.2s ease,
+    box-shadow 0.2s ease;
   z-index: 9999;
 }
 
-.quantum-cursor::after {
-  content: 'E=mc²';
+.cursor-label {
+  position: relative;
+  z-index: 1;
+}
+
+.cursor-tail {
+  position: absolute;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 77, 109, 0));
+  opacity: 0;
+  width: 0;
+  right: 100%;
+  top: 50%;
+  transform-origin: right center;
+  transform: translateY(-50%);
+}
+
+.quantum-cursor.cursor-shooting {
+  width: 120px;
+  height: 32px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: linear-gradient(90deg, rgba(255, 217, 59, 0.9), rgba(255, 77, 109, 0.4));
+  box-shadow: 0 8px 25px rgba(255, 77, 109, 0.35);
+  animation: shooting-glide 0.6s ease-in-out infinite alternate;
+}
+
+.quantum-cursor.cursor-shooting .cursor-label {
+  font-size: 0.8rem;
+}
+
+.quantum-cursor.cursor-shooting .cursor-tail {
+  opacity: 1;
+  width: 90px;
+  height: 6px;
+  box-shadow: 0 0 25px rgba(255, 217, 59, 0.9);
+  animation: tail-flicker 0.4s ease-in-out infinite alternate;
+}
+
+.burst-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8000;
+  overflow: hidden;
+}
+
+.burst {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  perspective: 800px;
+}
+
+.burst-ring,
+.burst-core {
+  position: absolute;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+}
+
+.burst-ring {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 157, 202, 0.6);
+  box-shadow: 0 0 40px rgba(255, 224, 138, 0.7);
+  animation: burst-wave 1.2s ease-out forwards;
+}
+
+.burst-core {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, rgba(255, 217, 59, 0.9), rgba(255, 77, 109, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.55rem;
+  color: #140a24;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+  transform: translateZ(18px);
+  animation: burst-core-pop 1.2s ease-out forwards;
+}
+
+.burst-core::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  opacity: 0.7;
+  transform: translateZ(10px);
+}
+
+@keyframes burst-wave {
+  0% {
+    transform: scale(0.2) rotateX(35deg);
+    opacity: 0.95;
+  }
+  70% {
+    opacity: 0.75;
+    transform: scale(1.1) rotateX(35deg);
+  }
+  100% {
+    transform: scale(1.8) rotateX(35deg);
+    opacity: 0;
+  }
+}
+
+@keyframes burst-core-pop {
+  0% {
+    transform: scale(0.4);
+    letter-spacing: -0.1em;
+  }
+  35% {
+    transform: scale(1.15) translateZ(18px);
+  }
+  100% {
+    transform: scale(0.6) translateZ(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes shooting-glide {
+  from {
+    box-shadow: 0 8px 25px rgba(255, 77, 109, 0.35), 0 0 12px rgba(255, 217, 59, 0.8);
+    filter: drop-shadow(0 0 6px rgba(255, 217, 59, 0.6));
+  }
+  to {
+    box-shadow: 0 6px 18px rgba(255, 77, 109, 0.2), 0 0 18px rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+  }
+}
+
+@keyframes tail-flicker {
+  from {
+    opacity: 0.8;
+    transform: scaleX(0.9);
+  }
+  to {
+    opacity: 0.4;
+    transform: scaleX(1.1);
+  }
 }
 
 @media (max-width: 720px) {
