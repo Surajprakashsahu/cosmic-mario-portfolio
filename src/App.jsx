@@ -1,5 +1,6 @@
 import CosmicLore from './components/CosmicLore.jsx';
 import Contact from './components/Contact.jsx';
+import EinsteinBursts from './components/EinsteinBursts.jsx';
 import Experience from './components/Experience.jsx';
 import Hero from './components/Hero.jsx';
 import Projects from './components/Projects.jsx';
@@ -10,6 +11,7 @@ const App = () => (
   <>
     <div className="star-field" />
     <div className="cosmic-veil" />
+    <EinsteinBursts />
     <QuantumCursor />
     <main>
       <Hero />
